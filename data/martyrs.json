@@ -1,5 +1,35 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-04T21:28:11.240Z",
-  "martyrs": []
+  "updatedAt": "2026-11-04T22:47:11.718Z",
+  "martyrs": [
+    {
+      "id": "08d226ca-ad71-4bc6-a14d-b431d3302237",
+      "name": "امیرحسین مظاهری",
+      "title": "بسیجی",
+      "father": "محمد",
+      "birthDate": "1382/07/13",
+      "birthPlace": "همدان",
+      "deathDate": "1405/07/13",
+      "deathPlace": "همدان",
+      "operation": "دفاع از مقر",
+      "cover": "https://abrehamrahi.ir/o/public/Nc23xbId/",
+      "biography": "زاده مریانج و دانشجومعلم ترم 7 بود که به شهادت رسید",
+      "testament": "هیچی!",
+      "memories": "خیلی خوب بود\nعجیب یود",
+      "images": [
+        "https://abrehamrahi.ir/o/public/fl1ILGT0/",
+        "https://abrehamrahi.ir/o/public/wvrkYhgZ/"
+      ],
+      "videos": [
+        "https://abrehamrahi.ir/o/public/ku8eCbXV/"
+      ],
+      "audios": [
+        "https://abrehamrahi.ir/o/public/sdrxUxAl/"
+      ],
+      "documents": [
+        "http://www.chap.sch.ir/sites/default/files/lbooks/1405-1406/9/C201.pdf"
+      ],
+      "sources": "تمام!"
+    }
+  ]
 }
