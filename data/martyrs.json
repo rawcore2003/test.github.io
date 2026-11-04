@@ -1,32 +1,5 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-04T19:05:34.852Z",
-  "martyrs": [
-    {
-      "id": "83c05299-7b34-41f7-9177-33084a3d309f",
-      "name": "محمدامین مظاهری",
-      "title": "بسیجی",
-      "father": "",
-      "birthDate": "",
-      "birthPlace": "",
-      "deathDate": "",
-      "deathPlace": "",
-      "operation": "",
-      "cover": "https://abrehamrahi.ir/o/public/Nc23xbId/",
-      "biography": "فرزند مریانج",
-      "testament": "",
-      "memories": "",
-      "images": [
-        "https://abrehamrahi.ir/o/public/Nc23xbId/"
-      ],
-      "videos": [
-        "https://abrehamrahi.ir/o/public/Nc23xbId/",
-        "https://abrehamrahi.ir/o/public/Nc23xbId/",
-        "https://abrehamrahi.ir/o/public/Nc23xbId/"
-      ],
-      "audios": [],
-      "documents": [],
-      "sources": ""
-    }
-  ]
+  "updatedAt": "2026-11-04T21:07:37.086Z",
+  "martyrs": []
 }
