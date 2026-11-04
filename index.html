@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#14243a">
+  <meta name="description" content="یادمان شهدا؛ آرشیوی برای ثبت زندگی، خاطرات و اسناد شهدا">
+  <title>یادمان شهدا</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="config.js"></script>
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="./"><span class="brand-mark">✦</span><span><b>یادمان شهدا</b><small>روایت زندگی، ایثار و جاودانگی</small></span></a>
+  <nav><a href="./">صفحه اصلی</a><a href="#about">درباره مجموعه</a></nav>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-content">
+      <span class="eyebrow">گنجینه‌ای برای نسل‌های آینده</span>
+      <h1>نامشان می‌ماند؛<br><em>راهشان روشن</em></h1>
+      <p>روایت زندگی، خاطرات و اسناد مردانی که نامشان در حافظه تاریخ جاودانه است.</p>
+      <a class="button button-gold" href="#archive">مشاهده فهرست شهدا <span>←</span></a>
+    </div>
+    <div class="hero-ornament" aria-hidden="true"><span>✦</span></div>
+  </section>
+  <section class="stats" id="stats">
+    <div><strong id="count">۰</strong><span>پرونده ثبت‌شده</span></div>
+    <div><strong>یاد و نام</strong><span>سرمایه ماندگار</span></div>
+    <div><strong>روایت</strong><span>برای نسل‌های آینده</span></div>
+  </section>
+  <section class="section" id="archive">
+    <div class="section-heading"><div><span class="eyebrow">آرشیو دیجیتال</span><h2>فهرست شهدا</h2><p>برای مشاهده جزئیات هر پرونده، روی کارت آن کلیک کنید.</p></div></div>
+    <div class="search-row">
+      <label class="search-box"><span>⌕</span><input id="search" type="search" placeholder="جست‌وجو بر اساس نام، شهر یا مشخصات..."></label>
+      <select id="sort" aria-label="مرتب‌سازی"><option value="name">مرتب‌سازی بر اساس نام</option><option value="date">تاریخ شهادت</option></select>
+    </div>
+    <div id="martyr-list" class="martyr-grid"><div class="loading">در حال دریافت اطلاعات...</div></div>
+    <p id="empty" class="empty hidden">موردی برای نمایش پیدا نشد.</p>
+  </section>
+  <section class="about-band" id="about"><span class="eyebrow">رسالت این مجموعه</span><h2>حفظ نام‌ها، روایت زندگی‌ها</h2><p>این آرشیو با هدف گردآوری و نگهداری زندگی‌نامه، خاطرات، تصاویر، فیلم‌ها و اسناد شهدا ایجاد شده است.</p></section>
+</main>
+<footer class="site-footer"><span>یادمان شهدا</span><span>یادشان گرامی و راهشان پررهرو</span></footer>
+</body></html>

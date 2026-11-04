@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><title>مدیریت | یادمان شهدا</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css"><script src="config.js"></script><script defer src="assets/admin.js"></script>
+</head>
+<body class="admin-body">
+<header class="site-header"><a class="brand" href="./"><span class="brand-mark">✦</span><span><b>مدیریت یادمان شهدا</b><small>دسترسی مدیر مخزن</small></span></a><nav><a href="./">مشاهده سایت</a></nav></header>
+<main class="admin-wrap">
+<section id="login-panel" class="panel login-panel">
+  <span class="eyebrow">ناحیه خصوصی</span><h1>ورود مدیر</h1>
+  <p class="muted">برای دسترسی، توکن Fine-grained شخصی GitHub با دسترسی Contents: Read and write به همین مخزن وارد کنید. توکن در مرورگر ذخیره نمی‌شود.</p>
+  <label>توکن GitHub<input id="token" type="password" autocomplete="off" placeholder="github_pat_..." /></label>
+  <button id="login" class="button button-gold">بررسی هویت و ورود</button><p id="login-msg" class="notice" role="status"></p>
+</section>
+<section id="dashboard" class="hidden">
+  <div class="admin-top"><div><span class="eyebrow">پنل کنترل</span><h1>مدیریت پرونده‌ها</h1><p id="who" class="muted"></p></div><button id="logout" class="button button-outline">خروج امن</button></div>
+  <div class="admin-stats"><div class="panel"><strong id="admin-count">۰</strong><span>پرونده ثبت‌شده</span></div><div class="panel"><strong id="last-update">—</strong><span>آخرین بروزرسانی داده</span></div></div>
+  <div class="admin-layout">
+    <section class="panel">
+      <div class="panel-heading"><h2 id="form-title">افزودن شهید جدید</h2><button id="new-record" class="text-button">فرم جدید</button></div>
+      <form id="martyr-form">
+        <input type="hidden" id="record-id">
+        <div class="form-grid">
+          <label>نام و نام خانوادگی *<input id="name" required maxlength="160"></label>
+          <label>عنوان یا درجه<input id="title" maxlength="160"></label>
+          <label>نام پدر<input id="father"></label>
+          <label>تاریخ تولد<input id="birthDate" placeholder="مثلاً ۱۳۴۰/۰۲/۱۵"></label>
+          <label>محل تولد<input id="birthPlace"></label>
+          <label>تاریخ شهادت<input id="deathDate" placeholder="مثلاً ۱۳۶۵/۰۴/۰۷"></label>
+          <label>محل شهادت<input id="deathPlace"></label>
+          <label>عملیات / مناسبت<input id="operation"></label>
+          <label class="full">لینک تصویر اصلی (URL)<input id="cover" type="url" placeholder="https://..."></label>
+          <label class="full">زندگی‌نامه<textarea id="biography" rows="7"></textarea></label>
+          <label class="full">وصیت‌نامه<textarea id="testament" rows="6"></textarea></label>
+          <label class="full">خاطرات و روایت‌ها<textarea id="memories" rows="5" placeholder="هر خاطره را در یک پاراگراف وارد کنید."></textarea></label>
+          <label class="full">لینک تصاویر (هر URL در یک خط)<textarea id="images" rows="3"></textarea></label>
+          <label class="full">لینک فیلم‌ها (هر URL در یک خط)<textarea id="videos" rows="3"></textarea></label>
+          <label class="full">لینک فایل‌های صوتی (هر URL در یک خط)<textarea id="audios" rows="3"></textarea></label>
+          <label class="full">لینک اسناد و PDF (هر URL در یک خط)<textarea id="documents" rows="3"></textarea></label>
+          <label class="full">منابع و توضیحات<textarea id="sources" rows="3"></textarea></label>
+        </div>
+        <div class="form-actions"><button class="button button-gold" type="submit">ذخیره تغییرات در GitHub</button><button type="button" id="delete-record" class="button button-danger hidden">حذف این پرونده</button></div>
+        <p id="form-msg" class="notice" role="status"></p>
+      </form>
+    </section>
+    <aside class="panel"><div class="panel-heading"><h2>فهرست پرونده‌ها</h2></div><div id="admin-list" class="admin-list"></div></aside>
+  </div>
+  <section class="panel publish-panel"><div><h2>انتشار نسخه جدید سایت</h2><p class="muted">پس از ذخیره اطلاعات، با ثبت تغییر در شاخه اصلی، GitHub Actions به‌صورت خودکار سایت را می‌سازد و منتشر می‌کند.</p></div><button id="publish" class="button button-gold">بروزرسانی و انتشار سایت</button><p id="publish-msg" class="notice" role="status"></p><a id="actions-link" target="_blank" rel="noopener" class="hidden">مشاهده وضعیت انتشار در GitHub Actions</a></section>
+</section>
+</main>
+<script></script>
+</body></html>

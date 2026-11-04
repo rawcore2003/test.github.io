@@ -1,0 +1,9 @@
+const $=id=>document.getElementById(id);
+const fa=n=>new Intl.NumberFormat("fa-IR").format(n);
+let all=[];
+function safeUrl(u){try{const x=new URL(u);return ["https:","http:"].includes(x.protocol)?x.href:""}catch{return ""}}
+function card(m){const href=`martyr.html?id=${encodeURIComponent(m.id)}`;const img=safeUrl(m.cover);return `<a class="martyr-card" href="${href}">${img?`<img loading="lazy" src="${esc(img)}" alt="${esc(m.name)}">`:`<div class="card-placeholder">✦</div>`}<div class="card-content"><h3>${esc(m.name)}</h3><p>${esc(m.title||m.deathPlace||"")}</p><p>${esc(m.deathDate||"")}</p><span class="card-link">مشاهده پرونده ←</span></div></a>`}
+function esc(s=""){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+async function init(){try{const r=await fetch("data/martyrs.json");if(!r.ok)throw Error();const d=await r.json();all=d.martyrs||[];$("count").textContent=fa(all.length);render()}catch{$("martyr-list").innerHTML='<p class="empty">دریافت اطلاعات با خطا روبرو شد. کمی بعد دوباره تلاش کنید.</p>'}}
+function render(){let q=$("search").value.trim().toLocaleLowerCase("fa");let a=all.filter(m=>[m.name,m.title,m.birthPlace,m.deathPlace,m.biography].join(" ").toLocaleLowerCase("fa").includes(q));if($("sort").value==="date")a.sort((x,y)=>(y.deathDate||"").localeCompare(x.deathDate||""));else a.sort((x,y)=>x.name.localeCompare(y.name,"fa"));$("martyr-list").innerHTML=a.map(card).join("")||"";$("empty").classList.toggle("hidden",a.length>0)}
+$("search").addEventListener("input",render);$("sort").addEventListener("change",render);init();
