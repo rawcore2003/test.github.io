@@ -1,7 +1,27 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-04T22:50:57.344Z",
+  "updatedAt": "2026-11-05T10:34:53.686Z",
   "martyrs": [
+    {
+      "id": "242cc117-9674-4626-80c6-721400b94af2",
+      "name": "امیرحسین مظاهری",
+      "title": "",
+      "father": "",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "operation": "",
+      "cover": "",
+      "biography": "",
+      "testament": "",
+      "memories": "",
+      "images": [],
+      "videos": [],
+      "audios": [],
+      "documents": [],
+      "sources": ""
+    },
     {
       "id": "08d226ca-ad71-4bc6-a14d-b431d3302237",
       "name": "حاج قاسم سلیمانی",
