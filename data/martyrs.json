@@ -1,7 +1,27 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-05T18:03:22.204Z",
+  "updatedAt": "2026-11-05T18:06:29.842Z",
   "martyrs": [
+    {
+      "id": "0d4a2d74-3c91-4546-85c0-ccdc2960e18c",
+      "name": "محمدامین",
+      "title": "",
+      "father": "",
+      "birthDate": "",
+      "birthPlace": "",
+      "deathDate": "",
+      "deathPlace": "",
+      "operation": "",
+      "cover": "",
+      "biography": "",
+      "testament": "",
+      "memories": "",
+      "images": [],
+      "videos": [],
+      "audios": [],
+      "documents": [],
+      "sources": ""
+    },
     {
       "id": "682c6acd-ac25-4d5f-a22f-a37cfb0193e0",
       "name": "امیرحسین مظاهری",
